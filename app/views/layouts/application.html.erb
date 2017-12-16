@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rezansoluations</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+  	<nav class="navbar navbar-inverse">
+		  <div class="container-fluid">
+		    <div class="navbar-header" style="font-size: 'xx-large'">
+		      <a class="navbar-brand" href="#">Reza n Solutions</a>
+		    </div>
+		    <ul class="nav navbar-nav">
+		      
+		    </ul>
+		    <ul class="nav navbar-nav navbar-right">
+		      <li><%= link_to 'Home', root_path %></li>
+		      <li><%= link_to 'About', home_about_path %></li>
+		      <li><%= link_to 'Contact Us', home_contact_path %></li>
+		    </ul>
+		  </div>
+		</nav>
+    <%= yield %>
+  </body>
+</html>
